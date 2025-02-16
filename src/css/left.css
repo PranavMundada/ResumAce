@@ -1,0 +1,157 @@
+.left#resume {
+  border: 2px solid black;
+  height: 1000px;
+  width: 750px;
+  margin: 20px;
+  display: flex;
+}
+
+.left#head {
+  margin: 0%;
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left h1 {
+  margin: 0%;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.left #otherDetails {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 13px;
+}
+
+.left#otherDetails div {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .left#resume {
+    border: 2px solid black;
+    height: 800px;
+    width: 600px;
+    margin: 20px;
+  }
+  .edBlock {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin: 15px;
+  }
+  #resume h2 {
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .left h1 {
+    font-size: 30px;
+    margin: 8px;
+  }
+
+  .left #resume h4 {
+    font-size: 15px;
+  }
+
+  .left #otherDetails {
+    font-size: 9px;
+  }
+
+  .left svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .left#resume {
+    border: 2px solid black;
+    height: 550px;
+    width: 400px;
+    margin: 10px;
+  }
+  .edBlock {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 8px;
+    margin: 5px;
+  }
+  .edBlock div {
+    font-size: 10px;
+    margin: 3px;
+  }
+  .left h2 {
+    margin: 3px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .left h1 {
+    font-size: 21px;
+    margin: 10px;
+  }
+
+  .left #resume h4 {
+    font-size: 10px;
+  }
+
+  .left #otherDetails {
+    font-size: 7px;
+  }
+
+  .left svg {
+    width: 7px;
+    height: 7px;
+    margin-top: 2px;
+    margin-right:2px ;
+  }
+}
+
+@media (max-width: 400px) {
+  .left#resume {
+    border: 2px solid black;
+    height: 420px;
+    width: 300px;
+    margin: 10px;
+  }
+  .left .edBlock div {
+    font-size: 7px;
+    margin: 2px;
+  }
+  #resume h2 {
+    font-size: 10px;
+    margin: 3px;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 15px;
+  }
+
+  .left #resume h4 {
+    font-size: 7px;
+  }
+
+  .left #otherDetails {
+    font-size: 6px;
+  }
+
+  svg {
+    width: 5px;
+    height: 5px;
+    margin: 2px;
+  }
+
+  #experienceSection {
+    margin-top: 10px;
+  }
+  #educationSection {
+    margin-top: 5px;
+  }
+}

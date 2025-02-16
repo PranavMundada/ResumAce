@@ -1,0 +1,358 @@
+#info{
+    width:500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#infoType{
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.infoTypeBtn{
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.infoTypeBtn:focus{
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+}
+
+.infoTypeBtn:hover{
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 15px;
+    color: white;
+    background-color: gray;
+    margin: 10px;
+}
+#personalDetails{
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 10px;
+}
+
+label{
+    font-size: 20px;
+    margin: 10px;
+}
+
+input{
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#education{
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#experience{
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.listElement{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.showBtn{
+    margin: auto 10px;
+    width:40px;
+    height:40px;
+    padding: 0px;
+    border: none;
+    background-color: white;
+    display: flex;
+}
+
+.listElement h4{
+    /* font-size: 20px; */
+    margin: 17px;
+}
+
+.addBtn{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.saveBtn{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#layout{
+    border: 2px solid black;
+    margin: 20px;
+}
+
+
+#layoutTypes{
+    margin: 10px;
+    display: flex;
+}
+
+#top{
+    margin: auto;
+    width:25%;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topcolor{
+    margin: 10px;
+    width: 50%;
+    height: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#topcolor div{
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width:25%;
+    height: 100px;
+    border: 2px solid black;
+}
+
+#leftcolor{
+    margin: 10px;
+    width: 50%;
+    height: 60%;
+    border: 2px solid black;
+    display: flex;
+}
+
+#leftcolor div{
+    width: 50%;
+    height: 100%;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width:25%;
+    height: 100px;
+    border: 2px solid black;
+}
+
+#rightcolor{
+    margin: 10px;
+    width: 50%;
+    height: 60%;
+    border: 2px solid black;
+    display: flex;
+}
+
+#rightcolor div{
+    width: 50%;
+    height: 100%;
+}
+
+#color{
+    margin: 20px;
+    border: 2px solid black;
+}
+
+#fonts{
+    margin: 20px;
+    border: 2px solid black;
+}
+
+#fontBtns{
+    display: flex;
+    justify-content: center;
+}
+
+#fontBtns div{
+    border: 2px solid black;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+}
+
+#fontsBtns p{
+    margin: 0%;
+}
+
+.delBtn{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.btns button{
+    width: 30%;
+}
+
+.addBtn{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.delBtn,.saveBtn{
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.addBtn:hover{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    background-color: gray;
+}
+
+.delBtn:hover,.saveBtn:hover{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    background-color: gray;
+}
+
+.showBtn:hover{
+    cursor: pointer;
+}
+
+@media(max-width:1200px){
+    .listElement{
+        height: 40px;
+    }
+
+    .listElement h4{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .showBtn{
+        align-items: center;
+    }
+}
+
+@media(max-width:650px){
+    #info{
+        width:400px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .listElement{
+        height: 40px;
+    }
+
+    .listElement h4{
+        font-size: 10px;
+        margin: 12px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .showBtn{
+        align-items: center;
+    }
+
+    .listElement svg{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media(max-width:400px){
+    #info{
+        width:300px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    #topcolor{
+        width: 50%;
+        height: 40px;
+    }
+    #leftcolor{
+        width: 50%;
+        height: 40px;
+    }
+    #rightcolor{
+        width: 50%;
+        height: 40px;
+    }
+    #fonts{
+        height: 100px;
+    }
+    #fonts div{
+        height: 50px;
+    }
+    label{
+        font-size: 13px;
+    }
+}

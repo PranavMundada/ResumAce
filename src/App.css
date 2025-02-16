@@ -1,0 +1,135 @@
+body,
+html {
+  margin: 0%;
+  padding: 0%;
+}
+
+#heading {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 15px;
+  font-size: 50px;
+}
+
+.mainPage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#download {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 60px;
+  margin: 20px;
+}
+
+#download button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+#download button:hover{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  background-color: gray;
+  margin: 10px;
+}
+
+#download button:active{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  background-color:black;
+  margin: 10px;
+}
+
+@media (max-width:1200px){
+  body,
+html {
+  margin: 0%;
+  padding: 0%;
+}
+
+#heading {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 15px;
+  font-size: 50px;
+}
+
+.mainPage {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#download {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 60px;
+  margin: 20px;
+}
+
+#download button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+#download button:hover{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  background-color: gray;
+  margin: 10px;
+}
+
+#download button:active{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  background-color:black;
+  margin: 10px;
+}
+}
+
+@media (max-width:400px){
+  body,
+html {
+  margin: 0%;
+  padding: 0%;
+}
+
+#heading {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 15px;
+  font-size: 30px;
+}
+
+
+}
