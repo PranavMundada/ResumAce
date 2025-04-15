@@ -70,6 +70,12 @@
         width: 13px;
         height: 13px;
     }
+    .right .skillBlock {
+        font-size: 11px;
+      }
+      .right .ProjectDetails {
+        font-size: 11px;
+      }
 }
 
 @media (max-width:650px){
@@ -113,6 +119,13 @@
         margin-top: 2px;
     }
 
+    .right .skillBlock {
+        font-size: 9px;
+      }
+      .right .ProjectDetails {
+        font-size: 9px;
+      }
+
 }
 
 @media (max-width:400px){
@@ -155,4 +168,11 @@
     #educationSection{
         margin-top: 5px;
     }
+
+    .right .skillBlock {
+        font-size: 7px;
+      }
+      .right .ProjectDetails {
+        font-size: 7px;
+      }
 }

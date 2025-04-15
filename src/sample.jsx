@@ -1,3 +1,5 @@
+import Projects from "./components/projects";
+
 const sample={
     personalDetails:{
         fullName:"Pranav Mundada",
@@ -22,6 +24,17 @@ const sample={
             endDate:"Present",
             location:"Pune ,India",
             description:"Responsible for designing, developing, testing, and maintaining software applications."
+        }
+    ],
+    Project:[
+        {
+            projectName:"Resume Builder",
+            about:"Resume Builder is a sleek and user-friendly web application built with React, designed to help users effortlessly create professional resumes. It features dynamic form inputs, real-time preview, customizable templates, and a built-in PDF export powered by html2pdf, making resume creation quick, simple, and visually appealing."
+        }
+    ],
+    Skill:[
+        {
+            details:"Skilled in Data Structure and Algorithm"
         }
     ]
 }

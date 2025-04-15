@@ -3,7 +3,9 @@ import AddBtn from "./addbtn";
 import InputList from "./inputList";
 import Education from "./education";
 import Experience from "./experience";
+import Projects from "./projects";
 import { useState } from "react";
+import Skill from "./skills";
 
 function EnterInfo({
   infotype,
@@ -21,12 +23,20 @@ function EnterInfo({
   setLayout,
   font,
   setFont,
-  ref
+  ref,
+  projectDetails,
+  setProjectDetails,
+  skillDetails,
+  setSkillDetails
 }) {
   const [edu, setEdu] = useState(0);
   const [eduno, setEduno] = useState(0);
   const [exp, setExp] = useState(0);
   const [expno, setExpno] = useState(0);
+  const [project,setProject]=useState(0);
+  const [projno,setProjno]=useState(0);
+  const [skill,setSkill]=useState(0);
+  const [skillno,setSkillno]=useState(0);
 
   function changeFullName(e) {
     setpersonalDetails((previnfo) => ({
@@ -177,6 +187,26 @@ function EnterInfo({
             expno={expno}
             setExp={setExp}
             setExpno={setExpno}
+          />
+        </div>
+        <div id="projects">
+        <Projects
+            projectDetails={projectDetails}
+            setProjectDetails={setProjectDetails}
+            project={project}
+            projno={projno}
+            setProject={setProject}
+            setProjno={setProjno}
+          />
+        </div>
+        <div id="skills">
+        <Skill
+            skillDetails={skillDetails}
+            setSkillDetails={setSkillDetails}
+            skill={skill}
+            skillno={skillno}
+            setSkill={setSkill}
+            setSkillno={setSkillno}
           />
         </div>
       </>

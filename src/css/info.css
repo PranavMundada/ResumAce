@@ -72,7 +72,7 @@ input{
     border-radius: 10px;
 }
 
-#experience{
+#experience,#projects,#skills{
     border: 2px solid black;
     margin: 20px;
     display: flex;

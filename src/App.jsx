@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import sample from "./sample";
 import "./App.css";
 import InfoTypeBtn from "./components/infoTypeBtn";
@@ -14,11 +14,60 @@ import { useRef } from "react";
 function App() {
   const ref = useRef(null);
   const [infoType, setInfoType] = useState(0);
-  const [personalDetails, setPersonalDetails] = useState(
-    sample.personalDetails,
-  );
-  const [educationDetails, setEducationDetails] = useState(sample.Education);
-  const [experienceDetails, setExperienceDetails] = useState(sample.Experience);
+  // const [personalDetails, setPersonalDetails] = useState(
+  //   sample.personalDetails,
+  // );
+  // const [educationDetails, setEducationDetails] = useState(sample.Education);
+  // const [experienceDetails, setExperienceDetails] = useState(sample.Experience);
+  // const [projectDetails,setProjectDetails]=useState(sample.Project);
+  // const [skillDetails, setSkillDetails] = useState(sample.Skill);
+
+  const [skillDetails, setSkillDetails] = useState(() => {
+    const savedSkill = localStorage.getItem('skill');
+    return savedSkill ? JSON.parse(savedSkill) : sample.Skill;
+  });
+  const [personalDetails, setPersonalDetails] = useState(() => {
+    const savedPersonal = localStorage.getItem('personalDetails');
+    return savedPersonal ? JSON.parse(savedPersonal) : sample.personalDetails;
+  });
+  
+  const [educationDetails, setEducationDetails] = useState(() => {
+    const savedEducation = localStorage.getItem('educationDetails');
+    return savedEducation ? JSON.parse(savedEducation) : sample.Education;
+  });
+  
+  const [experienceDetails, setExperienceDetails] = useState(() => {
+    const savedExperience = localStorage.getItem('experienceDetails');
+    return savedExperience ? JSON.parse(savedExperience) : sample.Experience;
+  });
+  
+  const [projectDetails, setProjectDetails] = useState(() => {
+    const savedProject = localStorage.getItem('projectDetails');
+    return savedProject ? JSON.parse(savedProject) : sample.Project;
+  });
+
+
+  // Save skillDetails to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('personalDetails', JSON.stringify(personalDetails));
+  }, [personalDetails]);
+
+  useEffect(() => {
+    localStorage.setItem('educationDetails', JSON.stringify(educationDetails));
+  }, [educationDetails]);
+
+  useEffect(() => {
+    localStorage.setItem('experienceDetails', JSON.stringify(experienceDetails));
+  }, [experienceDetails]);
+
+  useEffect(() => {
+    localStorage.setItem('projectDetails', JSON.stringify(projectDetails));
+  }, [projectDetails]);
+  useEffect(() => {
+    localStorage.setItem('skill', JSON.stringify(skillDetails));
+  }, [skillDetails]);
+ 
+
   const [accentColor, setAccentColor] = useState("black");
   const [textColor, setTextColor] = useState("#ffffff");
   const [layout, setLayout] = useState("top");
@@ -128,6 +177,10 @@ function App() {
             font={font}
             setFont={setFont}
             ref={ref}
+            projectDetails={projectDetails}
+            setProjectDetails={setProjectDetails}
+            skillDetails={skillDetails}
+            setSkillDetails={setSkillDetails}
           />
         </div>
         <Resume
@@ -143,6 +196,8 @@ function App() {
           font={font}
           setFont={setFont}
           ref={ref}
+          projectDetails={projectDetails}
+          skillDetails={skillDetails}
         />
       </div>
     </>
