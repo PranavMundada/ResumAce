@@ -141,7 +141,7 @@ function Resume({
             {skillDetails.map((item, index) => {
               return (
                 <div key={index} className="skillBlock">
-                  -{item.details}
+                  •{item.details}
                 </div>
               );
             })}
